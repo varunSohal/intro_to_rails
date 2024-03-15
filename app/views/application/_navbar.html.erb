@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to right, #f8f9fa, #ffffff);">
+  <div class="container">
+    <%= link_to "Shopmobile", root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Employees", '/employees', class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Customers", '/customers', class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About us", '/about', class: "nav-link" %>
+        </li>
+        <!-- Add more navbar items as needed -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* CSS styles for the navbar */
+  .navbar {
+    border: none; /* Remove border */
+  }
+
+  .navbar-brand {
+    color: #343a40;
+    font-weight: bold;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 10px;
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+
+  .navbar-nav .nav-link {
+    color: #343a40;
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure navbar links are displayed inline */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+</style>
